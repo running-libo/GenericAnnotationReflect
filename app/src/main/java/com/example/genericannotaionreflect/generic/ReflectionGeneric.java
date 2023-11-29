@@ -1,9 +1,7 @@
 package com.example.genericannotaionreflect.generic;
 
 import android.os.Build;
-
 import androidx.annotation.RequiresApi;
-
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

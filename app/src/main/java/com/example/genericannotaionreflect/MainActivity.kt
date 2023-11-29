@@ -5,8 +5,12 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.activity.ComponentActivity
+import androidx.lifecycle.lifecycleScope
 import com.example.genericannotaionreflect.autowire.MainActivity2
 import com.example.genericannotaionreflect.buterknife.InjectUtil
+import com.example.genericannotaionreflect.retrofit.IHomeService
+import com.example.genericannotaionreflect.retrofit.Retrofit
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
 //    @InjectView(R.id.btn_click)
@@ -26,6 +30,10 @@ class MainActivity : ComponentActivity() {
             startActivity(Intent(this, MainActivity2::class.java).apply {
                 putExtra("name", "intent")
             })
+        }
+
+        lifecycleScope.launch {
+            IHomeService.instance.getBanner()
         }
     }
 }

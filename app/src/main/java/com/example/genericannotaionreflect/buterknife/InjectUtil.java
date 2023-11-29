@@ -2,7 +2,6 @@ package com.example.genericannotaionreflect.buterknife;
 
 import android.app.Activity;
 import android.view.View;
-
 import java.lang.reflect.Field;
 
 public class InjectUtil {
