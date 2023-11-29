@@ -15,6 +15,8 @@
         <activity
             android:name=".autowire.MainActivity2"
             android:exported="false" />
+        <activity android:name=".hilt.MainActivity3"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

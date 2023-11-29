@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.view.View;
 import java.lang.reflect.Field;
 
+/**
+ * 实现ButerKnife库的自动获取view
+ */
 public class InjectUtil {
 
     public static void injectView(Activity activity) {

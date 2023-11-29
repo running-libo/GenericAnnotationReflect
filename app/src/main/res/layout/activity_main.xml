@@ -15,4 +15,10 @@
         android:layout_height="wrap_content"
         android:text="跳转传值"
         android:id="@+id/btn_intent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自动注入"
+        android:id="@+id/btn_hilt"/>
 </LinearLayout>

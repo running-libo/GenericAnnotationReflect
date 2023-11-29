@@ -8,6 +8,7 @@ import androidx.activity.ComponentActivity
 import androidx.lifecycle.lifecycleScope
 import com.example.genericannotaionreflect.autowire.MainActivity2
 import com.example.genericannotaionreflect.buterknife.InjectUtil
+import com.example.genericannotaionreflect.hilt.MainActivity3
 import com.example.genericannotaionreflect.retrofit.IHomeService
 import com.example.genericannotaionreflect.retrofit.Retrofit
 import kotlinx.coroutines.launch
@@ -32,8 +33,12 @@ class MainActivity : ComponentActivity() {
             })
         }
 
-        lifecycleScope.launch {
-            IHomeService.instance.getBanner()
+        findViewById<Button>(R.id.btn_hilt).setOnClickListener {
+            startActivity(Intent(this, MainActivity3::class.java))
         }
+
+//        lifecycleScope.launch {
+//            IHomeService.instance.getBanner()
+//        }
     }
 }
