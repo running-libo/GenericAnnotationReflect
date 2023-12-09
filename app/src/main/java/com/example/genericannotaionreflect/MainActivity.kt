@@ -9,13 +9,15 @@ import androidx.lifecycle.lifecycleScope
 import com.example.genericannotaionreflect.autowire.MainActivity2
 import com.example.genericannotaionreflect.buterknife.InjectUtil
 import com.example.genericannotaionreflect.hilt.MainActivity3
+import com.example.genericannotaionreflect.reflactdemo.ClassReflact
+import com.example.genericannotaionreflect.reflactdemo.FatherClass
 import com.example.genericannotaionreflect.retrofit.IHomeService
 import com.example.genericannotaionreflect.retrofit.Retrofit
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
-//    @InjectView(R.id.btn_click)
-    private var button: Button ?= null
+    //    @InjectView(R.id.btn_click)
+    private var button: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,5 +42,8 @@ class MainActivity : ComponentActivity() {
 //        lifecycleScope.launch {
 //            IHomeService.instance.getBanner()
 //        }
+
+        ClassReflact.printFileds(FatherClass::class.java)
     }
+
 }
