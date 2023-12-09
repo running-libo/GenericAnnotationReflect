@@ -9,6 +9,7 @@ import androidx.activity.ComponentActivity
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.lifecycleScope
 import com.example.genericannotaionreflect.annotate.Person
+import com.example.genericannotaionreflect.annotate.TestAnnoReflect
 import com.example.genericannotaionreflect.autowire.MainActivity2
 import com.example.genericannotaionreflect.buterknife.InjectUtil
 import com.example.genericannotaionreflect.hilt.MainActivity3
@@ -57,6 +58,7 @@ class MainActivity : ComponentActivity() {
 
         //注解测试用例
 //        Person.getAnnoValue()
+        TestAnnoReflect.testAnnotation()
     }
 
 }
