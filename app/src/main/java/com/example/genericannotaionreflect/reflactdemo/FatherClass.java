@@ -7,4 +7,17 @@ public class FatherClass {
 
     public FatherClass() {
     }
+
+    public FatherClass(String mFatherName, int mFatherAge) {
+        this.mFatherName = mFatherName;
+        this.mFatherAge = mFatherAge;
+    }
+
+    public String getmFatherName() {
+        return mFatherName;
+    }
+
+    public int getmFatherAge() {
+        return mFatherAge;
+    }
 }

@@ -1,10 +1,22 @@
 package com.example.genericannotaionreflect.reflactdemo;
 
+import androidx.annotation.NonNull;
+
+import com.example.genericannotaionreflect.retrofit.GET;
+
 public class SonClass extends FatherClass {
 
     private String mSonName;
     protected int mSonAge;
     public String mSonBirthday;
+
+    public SonClass() {
+    }
+
+    @GET("https:\\www.baidu.com")
+    private <T,K> String toStr(T t, K k) {
+        return t.toString() + k.toString();
+    }
 
     public String getmSonName() {
         return mSonName;
@@ -12,22 +24,6 @@ public class SonClass extends FatherClass {
 
     public void setmSonName(String mSonName) {
         this.mSonName = mSonName;
-    }
-
-    public int getmSonAge() {
-        return mSonAge;
-    }
-
-    public void setmSonAge(int mSonAge) {
-        this.mSonAge = mSonAge;
-    }
-
-    public String getmSonBirthday() {
-        return mSonBirthday;
-    }
-
-    public void setmSonBirthday(String mSonBirthday) {
-        this.mSonBirthday = mSonBirthday;
     }
 
 }
