@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.lifecycleScope
+import com.example.genericannotaionreflect.annotate.Person
 import com.example.genericannotaionreflect.autowire.MainActivity2
 import com.example.genericannotaionreflect.buterknife.InjectUtil
 import com.example.genericannotaionreflect.hilt.MainActivity3
@@ -53,6 +54,9 @@ class MainActivity : ComponentActivity() {
 //        ClassReflact.invokeMethod()
 //        ClassReflact.modifyField()
 //        ClassReflact.getConstructor()
+
+        //注解测试用例
+//        Person.getAnnoValue()
     }
 
 }
