@@ -58,7 +58,7 @@ class MainActivity : ComponentActivity() {
 
         //注解测试用例
 //        Person.getAnnoValue()
-        TestAnnoReflect.testAnnotation()
+//        TestAnnoReflect.testAnnotation()
     }
 
 }
